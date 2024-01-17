@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('vouchers', function (Blueprint $table) {
             $table->string('kode')->primary();
-            $table->foreignId('kode_transaksi');
+            $table->string('kode_transaksi');
             $table->date('exp');
             $table->string('status');
             $table->timestamps();
